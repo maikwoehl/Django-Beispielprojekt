@@ -1,0 +1,45 @@
+/*
+ * base.css
+ * 
+ * Color Scheme: http://colorschemedesigner.com/#0z11T--scuDwt
+ */
+ 
+
+#wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+ 
+#header h1 {
+    color: #E17000;
+}
+
+#footer {
+    text-align: center;
+}
+
+#articles {
+    width: 90%;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #F0963D;
+}
+
+hr {
+    background-color: #954A00;
+    border-color: #954A00;
+    height: 5px;
+    clear: both;
+}
+
+
+.article_text:first-letter {
+    color: white;
+    background-color: #AB6929;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin: 5px;
+    float: left;
+    padding: 3px;
+    border-radius: 10px;
+}
