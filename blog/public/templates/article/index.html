@@ -1,0 +1,42 @@
+{% load markup %}
+{% load syntax_color %}
+{% load disqus_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ article.art_title }} :: DaemonTuts DjangoCMS</title>
+<link rel="canonical" href="http://daemontuts.alwaysdata.net" />
+<link rel="stylesheet" type="text/css" href="../../static/css/start.css" />
+<link rel="stylesheet" type="text/css" href="m/ystatic/css/start.css" />
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<h1>DaemonTuts DjangoCMS</h1>
+</div> <!-- header -->
+<div id="articles">
+<div class="article">
+<h2><a href="/artikel/{{ article.id }}">{{ article.art_title }}</a></h2>
+<p><i>{{ article.art_pub_date }}</i> - <b>Tags: </b>{{ article.art_tags }}</p>
+<p>Kategorien: {{ article.art_category_first }}, {{ article.art_category_second }}</p>
+<div class="article_text">
+{{ article.art_text|pygmentize|textile }}
+</div><!-- .article_text -->
+
+{% if podcast_exist %}
+<audio controls>
+<source src="{{ podcast.pod_link }}" type="{{ podcast.pod_mime }}" />
+</audio>
+{% endif %}
+<hr />
+<div id="comments">
+{% disqus_show_comments %}
+</div><!-- #comments -->
+</div><!-- .article -->
+</div><!-- #articles -->
+<div id="footer">
+&copy; by Maik
+</div><!-- #footer -->
+</div><!-- #wrapper -->
+</body>
+</html>
