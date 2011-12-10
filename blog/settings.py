@@ -114,7 +114,7 @@ INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    # 'django.contrib.sites',
+    'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
@@ -125,10 +125,16 @@ INSTALLED_APPS = (
     # django markup filter
     'django.contrib.markup',
     'syntax_colorize',
+    
+    #disqus,
+    'disqus',
 
     # my packages
     'artikel',
 )
+
+DISQUS_API_KEY = 'gkDgQjX0fcvxRIK7Ef3ZzAJq170qHeTVRwuyzfqU33KD4CFIbf5GRUZ0DdHN773Z'
+DISQUS_WEBSITE_SHORTNAME = 'daemontuts4django'
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
