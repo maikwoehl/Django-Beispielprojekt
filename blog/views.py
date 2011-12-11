@@ -4,7 +4,7 @@ from artikel.models import Artikel
 
 def index(request):
     try:
-        articles = Artikel.objects.all()
+        articles = Artikel.objects.order_by('-art_pub_date')[:10]
     except Artikel.DoesNotExist:
         articles = "No content available!"
         
