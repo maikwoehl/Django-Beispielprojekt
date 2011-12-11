@@ -50,7 +50,6 @@ class Podcast(models.Model):
     mimetypes = (
         ('audio/mpeg','MP3'),
         ('audio/ogg','OGG'),
-        ('audio/flac','FLAC'),
     )  
 
     pod_mime = models.CharField(verbose_name="Datentyp",max_length=30,choices=mimetypes)    
