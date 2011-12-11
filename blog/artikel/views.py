@@ -10,12 +10,17 @@ def index(request, article_id):
     except Artikel.DoesNotExist:
         raise Http404
         
-    try:
-        podcast = Podcast.objects.get(pk=article_id)
-        podcast_exist = True
-    except Podcast.DoesNotExist:
-        podcast = None
-        podcast_exist = False
         
-    return render_to_response('article/index.html', {"article":content,"podcast":podcast,"podcast_exist":podcast_exist})
+    try:
+        podcasts = Podcast.objects.filter(article__exact=content.id)
+        podcasts_exist = True
+    
+    except Podcast.DoesNotExist:
+        podcasts = None
+        podcasts_exist = False
+        
+    return render_to_response('articles.html', {"article":content,
+        "podcasts":podcasts,
+        "podcasts_exist":podcasts_exist, 
+    })
 

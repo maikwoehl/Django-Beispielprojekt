@@ -6,7 +6,6 @@ from django.contrib import admin
 class PodcastInline(admin.TabularInline):
     model = Podcast
     extra = 0
-    max_num = 1
 
 class ArtikelAdmin(admin.ModelAdmin):
     #formfield_overrides = {
