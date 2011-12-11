@@ -1,0 +1,35 @@
+{% extends "index.html" %}
+{% load markup %}
+{% load syntax_color %}
+{% load disqus_tags %}
+
+{% block title %}
+{{ article.art_title }}
+{% endblock %}
+
+{% block articles %}
+<div class="article">
+<h2><a href="/artikel/{{ article.id }}">{{ article.art_title }}</a></h2>
+<p><i>{{ article.art_pub_date|date:"d M Y" }}</i> - <b>Tags: </b>{{ article.art_tags }}</p>
+<p>Kategorien: {{ article.art_category_first }}, {{ article.art_category_second }}</p>
+<div class="article_text">
+{{ article.art_text|pygmentize|textile }}
+</div><!-- .article_text -->
+
+
+{% if podcasts_exist %}
+<audio controls>
+{% for podcast in podcasts %}
+
+<source src="{{ podcast.pod_link }}" type="{{ podcast.pod_mime }}" />
+
+{% endfor %}
+</audio>
+<br />
+{% endif %}
+<hr />
+<div id="comments">
+{% disqus_show_comments %}
+</div><!-- #comments -->
+</div><!-- .article -->
+{% endblock %}
