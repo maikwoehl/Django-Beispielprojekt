@@ -17,19 +17,25 @@
 {% for article in articles %}
 <div class="article">
 <h2><a href="/artikel/{{ article.id }}">{{ article.art_title }}</a></h2>
-<p><i>{{ article.art_pub_date|date:"d M Y" }}</i> - <b>Tags: </b>{{ article.art_tags }}</p>
+<p><i>{{ article.art_pub_date|date:"d. M Y" }}</i></p>
 <p>Kategorien: {{ article.art_category_first }}, {{ article.art_category_second }}</p>
 <div class="article_text">
 {{ article.art_text|pygmentize|textile }}
 </div><!-- .article_text -->
+<p class="tags"><b>getaggt mit:</b> {{ article.art_tags }}</p>
 </div><!-- .article -->
 <hr />
 {% endfor %}
 {% endblock %}
 </div><!-- #articles -->
+<ul id="navigation">
+    <li><a href="#">link#1</a></li>
+    <li><a href="#">link#2</a></li>
+</ul> <!-- #navigation -->
 <div id="footer">
 &copy; by Maik
 </div><!-- #footer -->
+<div id="navigation-banner"></div> <!-- a simple navigation ribbon -->
 </div><!-- #wrapper -->
 </body>
 </html>
