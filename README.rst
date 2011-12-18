@@ -1,7 +1,9 @@
 Hugsun Improved
 =================
 
-Now available in v0.1b with 2 format support for podcasts.
+Name: Hugsun Improved
+Version: v0.1b2
+
 
 Description
 -----------
@@ -15,9 +17,15 @@ Description
     render_to_response("/articles/index.html", {'artikel':content})
 
 
+The Standard Language is german. I change it in the next time. (v0.1rc1)
 
 Changelog
 ---------
+
+**v0.1b2 beta 2**
+
+* date format changed from "16 Dec 2011" to "16. Dec 2011"
+* navigation-style add to site
 
 **v0.1b beta**
 

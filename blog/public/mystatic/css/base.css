@@ -4,11 +4,12 @@
  * Color Scheme: http://colorschemedesigner.com/#0z11T--scuDwt
  */
  
-
-#wrapper {
-    margin-left: 10%;
-    margin-right: 10%;
+html ,body {
+    margin: 0;
+    padding: 0;
 }
+
+/* Main Structure and Design Features */
  
 #header h1 {
     color: #E17000;
@@ -16,14 +17,33 @@
 
 #footer {
     text-align: center;
+    clear: both;
 }
 
 #articles {
-    width: 90%;
-    border: 2px solid black;
+    width: 80%;
     padding: 10px;
     background-color: #F0963D;
+    float: right;
+    margin: 0;
 }
+
+#navigation {
+    list-style: none;
+    float: left;
+    width: 15%;
+    padding: 0;
+    text-align: center;
+    
+    background-color: #F0963D;
+    
+    position: fixed;
+    top: 15.4%;
+    left: 0;
+    
+}
+
+/* Typography and Style */
 
 hr {
     background-color: #954A00;
@@ -42,4 +62,20 @@ hr {
     float: left;
     padding: 3px;
     border-radius: 10px;
+}
+
+.tags {
+    color: gray;
+    background-color: lightgray;
+    
+    display: block;
+    margin: 20px;
+    margin-top: 50px;
+    
+    padding: 5px;
+}
+
+.highlight {
+    padding: 5px;
+    margin: 20px;
 }
