@@ -9,9 +9,8 @@
 
 {% block articles %}
 <div class="article">
+<p class="article_infos"><i>{{ article.art_pub_date|date:"d M Y" }}</i> - <b>Tags: </b>{{ article.art_tags }} - Kategorien: {{ article.art_category_first }}, {{ article.art_category_second }}</p>
 <h2><a href="/artikel/{{ article.id }}">{{ article.art_title }}</a></h2>
-<p><i>{{ article.art_pub_date|date:"d M Y" }}</i> - <b>Tags: </b>{{ article.art_tags }}</p>
-<p>Kategorien: {{ article.art_category_first }}, {{ article.art_category_second }}</p>
 <div class="article_text">
 {{ article.art_text|pygmentize|textile }}
 </div><!-- .article_text -->

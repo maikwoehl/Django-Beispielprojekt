@@ -16,9 +16,8 @@
 {% block articles %}
 {% for article in articles %}
 <div class="article">
+<p class="article_infos"><i class="date">{{ article.art_pub_date|date:"d. M Y" }}</i><br />Kategorien: {{ article.art_category_first }}, {{ article.art_category_second }}</p>
 <h2><a href="/artikel/{{ article.id }}">{{ article.art_title }}</a></h2>
-<p><i>{{ article.art_pub_date|date:"d. M Y" }}</i></p>
-<p>Kategorien: {{ article.art_category_first }}, {{ article.art_category_second }}</p>
 <div class="article_text">
 {{ article.art_text|pygmentize|textile }}
 </div><!-- .article_text -->
