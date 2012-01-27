@@ -12,7 +12,7 @@ html ,body {
 /* Main Structure and Design Features */
  
 #header h1 {
-    color: #E17000;
+    color: #5AB1C6;
 }
 
 #footer {
@@ -33,26 +33,68 @@ html ,body {
     float: left;
     width: 15%;
     padding: 0;
+    margin-left: -10px;
     text-align: center;
     
-    background-color: #F0963D;
+    background-color: #32AAC6;
     
-    position: fixed;
+    /* position: fixed;
     top: 15.4%;
-    left: 0;
+    left: 0; */
     
 }
 
+.article_infos {
+    float: right;
+    width: 20%;
+    padding: 10px;
+    background-color: #32AAC6;
+
+    text-align: center;
+    color: white;
+    font-size: big;
+}
+
+.article_infos .date {
+    font-size: 20px;
+}
+
+
 /* Typography and Style */
 
+#articles, #navigation {
+    font-family: "Times New Roman", sans;
+    font-size: 18px;
+}
+
+.article_infos, .tags {
+    font-style: italic;
+    font-size: 10px;
+    margin: -10px 0 -10px 0;
+}
+
 hr {
-    background-color: #954A00;
+    background-color: #195B6A;
     border-color: #954A00;
     height: 5px;
     clear: both;
 }
 
+a {
+    color: #004B5C;
+}
+a:active {
+    color: #00718B;
+}
+a:hover {
+    color: #00718B;
+}
+a:visited {
+    color: #195B6A;
+}
 
+
+/*
 .article_text:first-letter {
     color: white;
     background-color: #AB6929;
@@ -62,9 +104,11 @@ hr {
     float: left;
     padding: 3px;
     border-radius: 10px;
-}
+} */
 
-.tags {
+#footer { margin-top: 100;}
+
+.tags, #footer {
     color: gray;
     background-color: lightgray;
     

@@ -2,3 +2,4 @@
 *.pyo
 *.geany
 settings_alwaysdata.py
+*.db
