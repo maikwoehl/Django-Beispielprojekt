@@ -11,8 +11,12 @@ html ,body {
 
 /* Main Structure and Design Features */
  
-#header h1 {
+#header h1, #header a {
     color: #5AB1C6;
+    text-decoration: none;
+}
+#header a:hover {
+    text-decoration: underline;
 }
 
 #footer {
@@ -26,6 +30,7 @@ html ,body {
     background-color: #F0963D;
     float: right;
     margin: 0;
+    margin-bottom: 50px;
 }
 
 #navigation {

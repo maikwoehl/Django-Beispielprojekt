@@ -9,7 +9,7 @@
 
 {% block articles %}
 <div class="article">
-<p class="article_infos"><i>{{ article.art_pub_date|date:"d M Y" }}</i> - <b>Tags: </b>{{ article.art_tags }} - Kategorien: {{ article.art_category_first }}, {{ article.art_category_second }}</p>
+<p class="article_infos"><i class="date">{{ article.art_pub_date|date:"d M Y" }}</i><br />Kategorien: {{ article.art_category_first }}, {{ article.art_category_second }}</p>
 <h2><a href="/artikel/{{ article.id }}">{{ article.art_title }}</a></h2>
 <div class="article_text">
 {{ article.art_text|pygmentize|textile }}
@@ -26,6 +26,7 @@
 </audio>
 <br />
 {% endif %}
+<p class="tags"><b>getaggt mit:</b> {{ article.art_tags }}</p>
 <hr />
 <div id="comments">
 {% disqus_show_comments %}
