@@ -2,12 +2,12 @@ Hugsun Improved
 =================
 
 Name: Hugsun Improved
-Version: v0.1b2
+Version: v0.1rc1
 
 
 Description
 -----------
-**Hugsun Improved** is a prototyp of `Hugsun <http://hugsun.org>`_ . It will base completly on *Django 
+**Hugsun Improved** is a prototype of `Hugsun <http://hugsun.org>`_ . It will base completly on *Django 
 1.3.1*::
 
     from artikel.models import Artikel
@@ -17,10 +17,15 @@ Description
     render_to_response("/articles/index.html", {'artikel':content})
 
 
-The Standard Language is german. I change it in the next time. (v0.1rc1)
+The Standard Language is german.
 
 Changelog
 ---------
+
+**v0.1rc1**
+
+* fix some css issues
+* update design
 
 **v0.1b2 beta 2**
 
