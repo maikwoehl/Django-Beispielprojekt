@@ -28,6 +28,7 @@ Changelog
 * add tag view (example: http://my.domain/tagged/yourtag)
 * remove box-shadow for the code-block
 * add template block navigation
+* remove category admin entry
 
 **v0.1rc1**
 
