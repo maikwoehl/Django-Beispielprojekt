@@ -2,7 +2,7 @@ Hugsun Improved
 =================
 
 Name: Hugsun Improved
-Version: v0.1rc1
+Version: v0.1rc2
 
 
 Description
@@ -21,6 +21,13 @@ The Standard Language is german.
 
 Changelog
 ---------
+
+**v0.1rc2**
+
+* add category-tag with the art_tags to feed
+* add tag view (example: http://my.domain/tagged/yourtag)
+* remove box-shadow for the code-block
+* add template block navigation
 
 **v0.1rc1**
 
