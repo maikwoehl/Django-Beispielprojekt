@@ -14,7 +14,7 @@ class ArtikelAdmin(admin.ModelAdmin):
     #}
     fieldsets = [
         ('Allgemeines', {'fields': ['art_title','art_pub_date', 
-'art_tags','art_category_first','art_category_second']}),
+'art_tags']}),
         (None, {'fields': ['art_text']}),
     ]	
 

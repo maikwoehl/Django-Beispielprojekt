@@ -3,7 +3,8 @@
     border-radius: 10px;
 }
 
-.highlight, #articles, .article_infos, #navigation {
+.highlight { border-radius:10px; }
+#articles, .article_infos, #navigation {
     box-shadow: 3px 5px 20px #5AB1C6;
     border-radius: 10px;
 }

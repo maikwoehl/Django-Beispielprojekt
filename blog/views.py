@@ -10,3 +10,11 @@ def index(request):
         
     return render_to_response('index.html', {"articles":articles})
 
+def tagged(request, tag_id):
+	try:
+		content = Artikel.objects.filter(art_tags__icontains=tag_id)
+	except Artikel.DoesNotExist:
+		raise Http404
+		
+	return render_to_response('tagged.html', {"articles": content, "tag_id":tag_id})
+

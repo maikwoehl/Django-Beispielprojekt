@@ -5,7 +5,7 @@ from django.db import models
 class Artikel(models.Model):
     art_title = models.CharField(verbose_name="Titel",max_length=200)
     art_pub_date = models.DateTimeField('Datum')
-    art_tags = models.CharField(verbose_name="Tags",max_length=1000)
+    art_tags = models.CharField(verbose_name="Tags",max_length=10000)
     
     categories = (
         ('Allgemein', 'Allgemein'),
@@ -30,7 +30,7 @@ class Artikel(models.Model):
         return "/artikel/%i/" % self.id
 
     def get_categories(self):
-        return (self.art_category_first,self.art_category_second)
+		return self.art_tags
         
     def get_description(self):
 		return self.art_text

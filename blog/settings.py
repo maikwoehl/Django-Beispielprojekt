@@ -133,8 +133,9 @@ INSTALLED_APPS = (
     'artikel',
 )
 
-DISQUS_API_KEY = 'gkDgQjX0fcvxRIK7Ef3ZzAJq170qHeTVRwuyzfqU33KD4CFIbf5GRUZ0DdHN773Z'
+DISQUS_API_KEY = ''
 DISQUS_WEBSITE_SHORTNAME = 'daemontuts4django'
+
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to

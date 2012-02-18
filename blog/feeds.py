@@ -15,7 +15,9 @@ class ArticlesFeed(Feed):
         return item.get_absolute_url()
 
     def item_categories(self,item):
-        return item.get_categories()
+		tags_list = item.get_categories()
+		tags = tags_list.split(",")
+		return tags
         
     def item_description(self,item):
         return item.get_description()

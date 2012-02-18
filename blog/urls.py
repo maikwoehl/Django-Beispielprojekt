@@ -23,6 +23,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
  
     url(r'^$', 'blog.views.index'),
+    url(r'^tagged/(?P<tag_id>.*)/$', 'blog.views.tagged'),
     url(r'^artikel/', include('artikel.urls')),
    
     # Feeds

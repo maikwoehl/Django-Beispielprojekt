@@ -23,4 +23,3 @@ def index(request, article_id):
         "podcasts":podcasts,
         "podcasts_exist":podcasts_exist, 
     })
-
