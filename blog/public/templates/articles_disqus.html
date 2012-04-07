@@ -2,6 +2,7 @@
 {% load markup %}
 {% load syntax_color %}
 {% load i18n %}
+{% load disqus_tags %}
 
 {% block title %}
 {{ article.art_title }}
@@ -27,5 +28,13 @@
 <br />
 {% endif %}
 <p class="tags"><b>{% trans "tagged with" %}:</b> {{ article.art_tags }}</p>
+<hr />
+<div id="comments">
+<!-- If you want to use Disqus for your site, please set this as 
+articles.html and rename the other articles.html without diqus to a 
+different name. You must set the API_KEY and WEBSITE_SHORT_NAME to use Disqus -->
+
+{% disqus_show_comments %}
+</div><!-- #comments -->
 </div><!-- .article -->
 {% endblock %}

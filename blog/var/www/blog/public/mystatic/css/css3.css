@@ -1,0 +1,20 @@
+.tags, #footer {
+    box-shadow:0px 0px 20px #333333;
+    border-radius: 10px;
+}
+
+.highlight { border-radius:10px; }
+#articles, .article_infos, #navigation {
+    box-shadow: 3px 5px 20px #5AB1C6;
+    border-radius: 10px;
+}
+
+#articles {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#navigation {
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}

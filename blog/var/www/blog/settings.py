@@ -4,7 +4,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('admin', 'your@mail.com'),
+    ('maik', 'maik.woehl@web.de'),
 )
 
 MANAGERS = ADMINS
@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
+        'NAME': 'saveplace.db',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -27,11 +27,11 @@ DATABASES = {
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Washington'
+TIME_ZONE = 'Europe/Berlin'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en_US'
+LANGUAGE_CODE = 'de_DE'
 
 SITE_ID = 1
 
@@ -84,7 +84,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = ''
+SECRET_KEY = 'ulg2cy1_h4_np)=j!947-@ub985iosamlb$#0*$97d!ld=n(@z'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -133,8 +133,8 @@ INSTALLED_APPS = (
     'artikel',
 )
 
-DISQUS_API_KEY = ''
-DISQUS_WEBSITE_SHORTNAME = ''
+DISQUS_API_KEY = 'gkDgQjX0fcvxRIK7Ef3ZzAJq170qHeTVRwuyzfqU33KD4CFIbf5GRUZ0DdHN773Z'
+DISQUS_WEBSITE_SHORTNAME = 'daemontuts4django'
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
