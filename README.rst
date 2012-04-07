@@ -17,7 +17,7 @@ Description
     render_to_response("/articles/index.html", {'artikel':content})
 
 
-The Standard Language is german.
+The Standard Language is english.
 
 Changelog
 ---------
