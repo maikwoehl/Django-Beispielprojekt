@@ -23,11 +23,11 @@ Changelog
 ---------
 
 **v0.1rc3**
+
 * add localization and translate to german
 * make english as standard language
 * standalone 'url.py' 
-* now 'django-disqus' isn't a dependency. You can use it or remove it 
-from the plugin list and use the standard template
+* now 'django-disqus' isn't a dependency. You can use it or remove it from the plugin list and use the standard template
 
 **v0.1rc2**
 
