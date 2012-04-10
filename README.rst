@@ -23,6 +23,7 @@ Changelog
 ---------
 
 **v0.1rc3**
+
 * add localization and translate to german
 * make english as standard language
 * standalone 'url.py' 
