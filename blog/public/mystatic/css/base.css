@@ -27,7 +27,7 @@ html ,body {
 #articles {
     width: 80%;
     padding: 10px;
-    background-color: #F0963D;
+    /* background-color: #F0963D; */
     float: right;
     margin: 0;
     margin-bottom: 50px;
@@ -41,7 +41,7 @@ html ,body {
     margin-left: -10px;
     text-align: center;
     
-    background-color: #32AAC6;
+    /* background-color: #32AAC6; */
     
     /* position: fixed;
     top: 15.4%;
@@ -114,8 +114,7 @@ a:visited {
 #footer { margin-top: 100;}
 
 .tags, #footer {
-    color: gray;
-    background-color: lightgray;
+    /* background-color: lightgray; */
     
     display: block;
     margin: 20px;

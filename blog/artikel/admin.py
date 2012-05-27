@@ -18,7 +18,7 @@ class ArtikelAdmin(admin.ModelAdmin):
         (None, {'fields': ['art_text']}),
     ]	
 
-    list_display = ('id','art_title','art_pub_date', 'art_tags')
+    list_display = ('art_title','art_pub_date', 'art_tags')
     list_filter = ['art_pub_date']
     search_fields = ['art_title']
     date_hierarchy = 'art_pub_date'

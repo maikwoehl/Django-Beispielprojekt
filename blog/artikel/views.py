@@ -3,6 +3,8 @@
 from artikel.models import Artikel, Podcast
 from django.http import HttpResponse, Http404
 from django.shortcuts import render_to_response
+import artikel.config as settings
+
 
 def index(request, article_id):
     try:
@@ -22,6 +24,7 @@ def index(request, article_id):
     return render_to_response('articles.html', {"article":content,
         "podcasts":podcasts,
         "podcasts_exist":podcasts_exist, 
+	"settings":settings,
     })
     
 def tagged(request, tag_id):

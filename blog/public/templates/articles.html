@@ -17,10 +17,14 @@
 
 
 {% if podcasts_exist %}
-<audio controls>
+<audio controls preload>
 {% for podcast in podcasts %}
 
+{% if "http" in podcast.pod_link %}
 <source src="{{ podcast.pod_link }}" type="{{ podcast.pod_mime }}" />
+{% else %}
+<source src="/media/{{ settings.podcast_web_dir }}/{{ podcast.pod_link }}" type="{{ podcast.pod_mime }}" />
+{% endif %}
 
 {% endfor %}
 </audio>

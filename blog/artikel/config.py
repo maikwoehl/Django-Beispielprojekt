@@ -1,3 +1,5 @@
 # Preference file
 
-podcast_directory=""
+base_url="/"
+
+podcast_web_dir="podcast"
