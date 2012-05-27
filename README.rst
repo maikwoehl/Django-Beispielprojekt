@@ -2,7 +2,7 @@ Hugsun Improved
 =================
 
 Name: Hugsun Improved
-Version: v0.1rc3
+Version: v0.1
 
 
 Description
@@ -21,6 +21,11 @@ The Standard Language is english.
 
 Changelog
 ---------
+
+**v0.1**
+
+* add preference file
+* a better podcast selection. If a "http://" not in the URL the path is relative to the path that is set in the preference file "artikel/config.py"
 
 **v0.1rc3**
 
@@ -64,4 +69,4 @@ Version Concept
 * for alpha versions we add an "a" at the end of the version.
 * for beta version we add a "b" at the end of the version.
 * for rc version we add a "rc" and the Release Candidate number at the end of version, like v0.1rc1
-* for final release versions we add a "fr" at the end of the version
+* for final release versions we add nothing
